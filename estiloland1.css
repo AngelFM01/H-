@@ -1,4 +1,3 @@
-
 :root{
     --fondo: #121111;
     --fondo2: lightblue;
@@ -13,14 +12,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    overflow-x: visible;
     
     /*background-color: #636363;*/
 }
+
 
 header {
     background-color: #121111;
@@ -76,6 +78,7 @@ header:hover{
 .a1{
     margin-right: 50px;
     border: var(--fondo) 3px solid;
+    min-width: this;
 }
 .a1:hover{
     color: aqua;
@@ -118,11 +121,12 @@ nav {
     background-image: url(graficos/galeria/portada.png);
     background-color:silver;
     background-size: 78%;
-    
+    min-width: 1500px;
     
     /*background-size: cover;*/
     background-position: center;
-    height: 800px;
+    height: 810px;
+    border-bottom: var(--texto2) 4px solid;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -160,6 +164,14 @@ nav {
     color: #000000;
    
 }
+.des1{
+    font-weight: 900;
+    font-size: 130%;
+    color: #0d0460;
+    color: #433f3f;
+    
+   
+}
 
 .btn-primary {
     background-color: #007BFF;
@@ -173,6 +185,7 @@ nav {
 
 .features-section {
     padding: 50px;
+    border-top: var(--texto2) 4px solid;
     /*background-color: #f4f4f4;*/
     
     
@@ -361,7 +374,7 @@ body {
     border-top: rgb(8, 161, 161) 7px solid;
     background-color: rgba(7, 44, 255, 0.769);
 }
-.barprod{}
+
 .barprod nav ul a{
     padding-top: 15px;
     position: relative;
@@ -429,3 +442,14 @@ footer {
     font-weight: 900;
     
 }
+.row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    border-color: #007BFF;
+}
+
+
+
+
+    
